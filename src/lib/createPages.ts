@@ -14,6 +14,7 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
                             html
                             frontmatter {
                                 title
+                                path
                             }
                         }
                     }
@@ -29,7 +30,7 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
 
     editedData.allMarkdownRemark.edges.forEach(({ node }: any) => {
         createPage({
-            path: node.frontmatter.title,
+            path: node.frontmatter.path,
             context: {
                 html: node.html,
                 title: node.frontmatter.title,

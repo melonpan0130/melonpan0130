@@ -8,7 +8,7 @@ const Header = ({ siteTitle, siteDescription }) => (
   <header id="header">
     <div>
       <h1>
-        <link to="/">{siteTitle}</link>
+        <Link id="titleLink" to="/">{siteTitle}</Link>
       </h1>
     </div>
   </header>
@@ -16,10 +16,12 @@ const Header = ({ siteTitle, siteDescription }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  siteDescription :propTypes.string
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  siteDescription: ``
 }
 
 export default Header

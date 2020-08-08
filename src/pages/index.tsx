@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import "../css/index.css"
+
 const LatestPostListQuery = graphql`
         query LatestPostListQuery {
             allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
@@ -29,17 +31,16 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>최근 작성한 게시글 목록</h1>
-      <ul>
+      <p>최근 작성한 게시글 목록</p>
+      <ul id="home_list">
         {
           data.allMarkdownRemark.edges.map(({node}) => (
             <li key={node.id}>
-              <h2>
-                <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
-              </h2>
-              <h3>{node.frontmatter.date}</h3>
-              <p>{node.excerpt}</p>
-              <hr />
+              <Link to={node.frontmatter.path}>
+                <h3>{node.frontmatter.title}</h3>
+                <p>{node.frontmatter.date}</p>
+                <p>{node.excerpt}</p>
+              </Link>
             </li>
           ))
         }

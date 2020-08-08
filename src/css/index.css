@@ -1,0 +1,14 @@
+.home_lsit{
+    margin: 0;
+    list-style: none;
+}
+
+.home_lsit > li {
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+.home_lsit > li:hover{
+    box-shadow: 0px 0px 10px gray;
+}

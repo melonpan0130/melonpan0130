@@ -10,7 +10,6 @@ const Header = ({ siteTitle, siteDescription }) => (
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
-      <p>{siteDescription}</p>
     </div>
   </header>
 )

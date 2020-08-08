@@ -9,18 +9,19 @@
     border-radius: 10px;
 }
 
-#home_list > li > Link {
+#home_list a {
     text-decoration: none;
+    color: black;
 }
 
-#home_list > li > Link:hover{
+#home_list a:hover{
     box-shadow: 0px 0px 10px gray;
 }
 
-#home_list > li > Link > h3 {
+#home_list a > h3 {
     margin: 0;
 }
 
-#home_list > li > Link > p {
-    margin: 10px;
+#home_list a > p {
+    margin: 10px 0;
 }

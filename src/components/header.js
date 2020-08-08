@@ -8,7 +8,7 @@ const Header = ({ siteTitle, siteDescription }) => (
   <header id="header">
     <div>
       <h1>
-        <Link id="titleLink" to="/">{siteTitle}</Link>
+        <Link to="/">{siteTitle}</Link>
       </h1>
     </div>
   </header>

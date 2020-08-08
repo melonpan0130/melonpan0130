@@ -1,5 +1,6 @@
 html {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }

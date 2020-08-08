@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Woon's Blog`,
     description: `본업은 개발자지만 일본어랑 영어도 번역합니다. 경제 분석도 언젠가 할 예정.`,
-    author: `@gatsbyjs`,
+    author: `@melonpan0130`,
   },
   plugins: [
     {

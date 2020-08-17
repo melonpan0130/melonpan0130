@@ -3,21 +3,21 @@
     margin-bottom: 1.45rem;
 }
 
-#header > div {
+#header > #title {
     margin: 0 auto;
     max-width: 960px;
     padding: 1.45rem 1.0875rem;
 }
 
-#header > div > h1 {
+#header > #title > h1 {
     margin: 0;
 }
 
-#header > div > h1 > #titleLink {
+#header > #title > h1 > #titleLink {
     color: black;
     text-decoration: none;
 }
 
-#header > div > p {
+#header > #title > p {
     margin-top: 10px;
 }

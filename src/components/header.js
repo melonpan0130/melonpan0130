@@ -12,10 +12,16 @@ const Header = ({ siteTitle, siteDescription }) => (
       </h1>
       <p>{siteDescription}</p>
     </div>
-    <div id="menubar" class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-secondary">Economy</button>
-      <button type="button" class="btn btn-secondary">News</button>
-      <button type="button" class="btn btn-secondary">Etc</button>
+    <div id="menubar">
+        <a class="menu_item" href="#">Economy</a>
+        <div class="dropdown">
+            <a href="#" class="menu_item dropdown_title">News</a>
+            <div class="dropdown_menu">
+                <a class="dropdown_item" href="#">NHK</a>
+                <a class="dropdown_item" href="#">BBC</a>
+            </div>
+        </div>
+        <a class="menu_item" href="#">Etc</a>
     </div>
   </header>
 )

@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Menubar from "./menubar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
+      <Menubar/>
       <div
         style={{
           margin: `0 auto`,

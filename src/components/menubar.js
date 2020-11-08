@@ -30,7 +30,7 @@ class Dropdown extends React.Component {
 
 const Menubar = () => (
     <div id="menubar">
-        <a className="menu_item" href="/">Economy</a>
+        {/* <a className="menu_item" href="/">Economy</a> */}
         <Dropdown>
         </Dropdown>
         <a className="menu_item" href="/">Etc</a>

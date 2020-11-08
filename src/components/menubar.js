@@ -33,6 +33,8 @@ const Menubar = () => (
         {/* <a className="menu_item" href="/">Economy</a> */}
         <Dropdown>
         </Dropdown>
+        <a className="menu_item" href="/">JAVA</a>
+        <a className="menu_item" href="/">jkl</a>
         <a className="menu_item" href="/">Etc</a>
     </div>
 )

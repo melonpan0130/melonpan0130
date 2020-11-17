@@ -34,7 +34,7 @@ const Menubar = () => (
         <Dropdown>
         </Dropdown>
         <a className="menu_item" href="/">JAVA</a>
-        <a className="menu_item" href="/">jkl</a>
+        <a className="menu_item" href="/">Design Pattern</a>
         <a className="menu_item" href="/">Etc</a>
     </div>
 )

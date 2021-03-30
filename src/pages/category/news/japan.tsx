@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { Query } from '../graphql-types'
+import { Query } from '../../../graphql-types'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../../components/layout"
+import SEO from "../../../components/seo"
 
 /** category news japan */
 
@@ -25,7 +25,7 @@ const getCategoryNewsJapan = graphql`
         }
     `;
 
-const ThirdPage: React.FC = () => {
+const newsJapan: React.FC = () => {
   const data = useStaticQuery<Query>(getCategoryNewsJapan);
   return (
     <Layout>
@@ -47,4 +47,4 @@ const ThirdPage: React.FC = () => {
   );
 };
 
-export default ThirdPage
+export default newsJapan

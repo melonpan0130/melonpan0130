@@ -1,16 +1,15 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { Query } from '../../graphql-types';
-import path from 'path';
+import { Query } from '../../graphql-types'
+
 import Layout from "../../components/layout"
-import Image from "../../components/image"
 import SEO from "../../components/seo"
 
-import "../css/index.css"
+/** category news japan */
 
-const LatestPostListQuery2 = graphql`
-        query LatestPostListQuery2 {
-            allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+const getCategoryNewsJapan = graphql`
+        query latestPostListQueryAndLatestPostListQuery {
+            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:"news/japan"}}} ) {
                 edges {
                     node {
                         excerpt(truncate: true, pruneLength: 200)
@@ -26,8 +25,8 @@ const LatestPostListQuery2 = graphql`
         }
     `;
 
-const news_japan_Page: React.FC = () => {
-  const data = useStaticQuery<Query>(LatestPostListQuery2);
+const newsJapan: React.FC = () => {
+  const data = useStaticQuery<Query>(getCategoryNewsJapan);
   return (
     <Layout>
       <SEO title="Home" />
@@ -48,4 +47,4 @@ const news_japan_Page: React.FC = () => {
   );
 };
 
-export default news_japan_Page
+export default newsJapan

@@ -5,9 +5,9 @@ import { Query } from '../../graphql-types'
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-const getCategoryNewsJapan = graphql`
-        query CategoryNewsJapanQuery {
-            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:"news/japan"}}} ) {
+const getCategoryNewsUs = graphql`
+        query CategoryNewsUsQuery {
+            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:"news/us"}}} ) {
                 edges {
                     node {
                         excerpt(truncate: true, pruneLength: 200)
@@ -23,8 +23,8 @@ const getCategoryNewsJapan = graphql`
         }
     `;
 
-const newsJapan: React.FC = () => {
-  const data = useStaticQuery<Query>(getCategoryNewsJapan);
+const newsUs: React.FC = () => {
+  const data = useStaticQuery<Query>(getCategoryNewsUs);
   return (
     <Layout>
       <SEO title="Home" />
@@ -45,4 +45,4 @@ const newsJapan: React.FC = () => {
   );
 };
 
-export default newsJapan
+export default newsUs

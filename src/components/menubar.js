@@ -19,10 +19,10 @@ class Dropdown extends React.Component {
     
     render() {
         return <div className="dropdown" onMouseOver={this.onMouseOver.bind(this)} onMouseLeave={this.onMouseLeave.bind(this)}>
-            <a href="/" className="menu_item dropdown_title">News</a>
+            <a className="menu_item dropdown_title">News</a>
             <div className="dropdown_menu" style={{display:this.isHovering?'block':'none'}}>
-                <a className="dropdown_item" href="/">NHK</a>
-                <a className="dropdown_item" href="/">BBC</a>
+                <a className="dropdown_item" href="/news/japan">Japan</a>
+                <a className="dropdown_item" href="/news/us">US</a>
             </div>
         </div>
     }

@@ -1,16 +1,13 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { Query } from '../graphql-types';
-import path from 'path';
+import { Query } from '../graphql-types'
+
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-import "../css/index.css"
-
-const LatestPostListQuery = graphql`
-        query LatestPostListQuery {
-            allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+const getCategoryEtc = graphql`
+        query CategoryEtc {
+            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:null}}} ) {
                 edges {
                     node {
                         excerpt(truncate: true, pruneLength: 200)
@@ -26,8 +23,8 @@ const LatestPostListQuery = graphql`
         }
     `;
 
-const IndexPage: React.FC = () => {
-  const data = useStaticQuery<Query>(LatestPostListQuery);
+const CategoryEtc: React.FC = () => {
+  const data = useStaticQuery<Query>(getCategoryEtc);
   return (
     <Layout>
       <SEO title="Home" />
@@ -48,4 +45,4 @@ const IndexPage: React.FC = () => {
   );
 };
 
-export default IndexPage
+export default CategoryEtc

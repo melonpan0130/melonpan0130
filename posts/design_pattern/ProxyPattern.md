@@ -2,6 +2,7 @@
 title: 'ProxyPattern'
 date: 2020-11-18 23:55:00
 path: '/design_pattern/ProxyPattern'
+category: 'design_pattern'
 ---
 
 `어떤 객체에 대한 접근을 제어하는 용도로 그것을 대변하는 객체를 제공하는 패턴`

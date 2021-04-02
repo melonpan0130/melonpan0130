@@ -2,6 +2,7 @@
 title: 'Builder Pattern'
 date: 2020-11-18 23:55:00
 path: '/design_pattern/BuilderPattern'
+category: 'design_pattern'
 ---
 
 참고

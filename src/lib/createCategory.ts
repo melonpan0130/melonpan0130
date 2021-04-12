@@ -2,12 +2,12 @@ import { CreatePagesArgs, graphql } from 'gatsby';
 import path from 'path';
 import { Query } from '../graphql-types';
 
-export async function createPages({ actions, graphql }: CreatePagesArgs) {
+export async function createCategory({ actions, graphql }: CreatePagesArgs) {
     const { createPage } = actions;
     
     const { data, errors } = await graphql<Query>(`
             {
-                allMarkdownRemark {
+                allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }}}) {
                     edges {
                         node {
                             html
@@ -20,6 +20,8 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
                 }
             }
         `);
+
+        // (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq: $categoryPath}}})
 
     if (errors) {
         throw errors;
@@ -34,7 +36,7 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
                 html: node.html,
                 title: node.frontmatter.title,
             },
-            component: path.resolve(__dirname, '../templates/PostTemplate.tsx'),
+            component: path.resolve(__dirname, '../templates/CategoryTemplate.tsx'),
         });
     });
 }

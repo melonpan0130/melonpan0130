@@ -4,25 +4,29 @@ import { Query } from '../graphql-types'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {PostList} from "../components/_postList4"
 
-const getCategoryEtc = graphql`
-        query CategoryEtc {
-            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:null}}} ) {
-                edges {
-                    node {
-                        excerpt(truncate: true, pruneLength: 200)
-                        frontmatter {
-                            title
-                            path
-                            date(formatString: "YYYY-MM-DD HH:mm:ss")
-                        }
-                        id
-                    }
+const categoryPath = "news/japan";
+
+const getCategoryEtc = graphql<Query>(`
+query PostList {
+    allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:${categoryPath}}} ) {
+        edges {
+            node {
+                excerpt(truncate: true, pruneLength: 200)
+                frontmatter {
+                    title
+                    path
+                    date(formatString: "YYYY-MM-DD HH:mm:ss")
                 }
+                id
             }
         }
-    `;
+    }
+}
+`);
 
+    
 const CategoryEtc: React.FC = () => {
   const data = useStaticQuery<Query>(getCategoryEtc);
   return (
@@ -43,6 +47,9 @@ const CategoryEtc: React.FC = () => {
       </ul>
     </Layout>
   );
+
+//   return (PostList("news/japan"));
+    // return <PostList categoryPath="/etc"></PostList>
 };
 
 export default CategoryEtc

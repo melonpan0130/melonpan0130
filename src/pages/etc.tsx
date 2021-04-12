@@ -4,13 +4,12 @@ import { Query } from '../graphql-types'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {PostList} from "../components/_postList4"
 
 const categoryPath = "news/japan";
 
-const getCategoryEtc = graphql<Query>(`
-query PostList {
-    allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:${categoryPath}}} ) {
+const getCategoryEtc = graphql`
+query CategoryEtcQuery {
+    allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:null}}} ) {
         edges {
             node {
                 excerpt(truncate: true, pruneLength: 200)
@@ -24,7 +23,7 @@ query PostList {
         }
     }
 }
-`);
+`;
 
     
 const CategoryEtc: React.FC = () => {

@@ -34,8 +34,9 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+        }}>
+        <img src="../images/gatsby-icon.png"/>
+        <video src="../images/sample.mp4" autoPlay muted loop/>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

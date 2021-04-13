@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Header from "./header"
 import Menubar from "./menubar"
@@ -20,6 +21,13 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
+        }
+      }
+      placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
@@ -35,7 +43,7 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}>
-        <img src="../images/gatsby-icon.png"/>
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         <video src="../images/sample.mp4" autoPlay muted loop/>
         <main>{children}</main>
         <footer>

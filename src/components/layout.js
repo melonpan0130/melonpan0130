@@ -8,7 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
+// import { Video } from "gatsby-video"
+import sampleVideo from "../images/sample.mp4"
+// import Video from "./video"
 
 import Header from "./header"
 import Menubar from "./menubar"
@@ -21,13 +24,6 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
-        }
-      }
-      placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
         }
       }
     }
@@ -43,8 +39,23 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}>
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-        <video src="../images/sample.mp4" autoPlay muted loop/>
+        {/* <Img fluid={data.placeholderImage.childImageSharp.fluid} /> */}
+        {/* <Video
+          poster={poster_image}
+          autoPlay
+          muted
+          loop
+        /> */}
+        {/* <Video
+          videoSrcURL="./images/sample.mp4"
+          videoTitle="Official Music Video on YouTube"
+        /> */}
+        {/* <video src="../images/sample.mp4" autoPlay muted loop/> */}
+        {/* <video width="100%" autoPlay loop >
+          <source src="../images/sample.mp4"/>
+        </video> */}
+        <video autoPlay loop src={sampleVideo} type="video.mp4" />
+
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

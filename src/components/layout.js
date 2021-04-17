@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <video autoPlay controls loop src={sampleVideo} type="video.mp4" />
+      <video autoPlay loop muted src={sampleVideo} type="video.mp4" />
       <div id="main">
         <Header siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
         <Menubar/>

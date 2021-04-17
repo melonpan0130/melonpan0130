@@ -1,6 +1,16 @@
+#main {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 2.45rem;
+}
+
 #home_list{
     margin: 0;
     list-style: none;
+    border: solid red 1px;
 }
 
 #home_list > li {
@@ -10,12 +20,19 @@
 }
 
 @keyframes aniHover {
-    from {box-shadow: 0px 0px 0px gray;}
-    to {box-shadow: 0px 0px 15px gray;}
+    from {
+        box-shadow: 0px 0px 0px gray;
+        background-color: none;
+    }
+    to {
+        box-shadow: 0px 0px 15px gray;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 #home_list > li:hover {
     box-shadow: 0px 0px 15px gray;
+    background-color: rgba(255, 255, 255, 0.3);
     animation-name: aniHover;
     animation-duration: 0.5s;
 }
@@ -35,4 +52,7 @@
 
 video {
     border: solid red 1px;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
 }

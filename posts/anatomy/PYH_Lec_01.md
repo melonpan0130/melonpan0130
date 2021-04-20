@@ -1,6 +1,6 @@
 ---
 title: '박유현 교수님의 인체해부학 핵심정리 1강'
-date: 2020-11-18 23:55:00
+date: 2021-04-20 23:46:00
 path: '/anatomy/PYH_Lec_01'
 category: 'anatomy'
 ---

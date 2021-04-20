@@ -5,9 +5,9 @@ import { Query } from '../graphql-types'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const getCategoryAnatomy = graphql`
-        query CategoryAnatomyQuery {
-            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:"anatomy"}}} ) {
+const getCategoryDesignPattern = graphql`
+        query CategoryDesignPatternQuery {
+            allMarkdownRemark (sort: { order: DESC, fields: frontmatter___date }, filter:{frontmatter:{category:{eq:"design_pattern"}}} ) {
                 edges {
                     node {
                         excerpt(truncate: true, pruneLength: 200)
@@ -23,8 +23,8 @@ const getCategoryAnatomy = graphql`
         }
     `;
 
-const CategoryAnatomy: React.FC = () => {
-  const data = useStaticQuery<Query>(getCategoryAnatomy);
+const CategoryDesignPattern: React.FC = () => {
+  const data = useStaticQuery<Query>(getCategoryDesignPattern);
   return (
     <Layout>
       <SEO title="Home" />
@@ -45,4 +45,4 @@ const CategoryAnatomy: React.FC = () => {
   );
 };
 
-export default CategoryAnatomy
+export default CategoryDesignPattern

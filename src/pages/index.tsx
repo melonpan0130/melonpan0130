@@ -1,12 +1,8 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { Query } from '../graphql-types';
-import path from 'path';
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-
-import "../css/index.css"
 
 const LatestPostListQuery = graphql`
         query LatestPostListQuery {

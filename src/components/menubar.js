@@ -34,6 +34,7 @@ const Menubar = () => (
         <Dropdown>
         </Dropdown>
         <a className="menu_item" href="/design_pattern">Design Pattern</a>
+        <a className="menu_item" href="/anatomy">Anatomy</a>
         <a className="menu_item" href="/etc">Etc</a>
     </div>
 )

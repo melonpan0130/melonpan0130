@@ -15,6 +15,7 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
                                 title
                                 path
                             }
+                            tableOfContents(heading: "", absolute: false, maxDepth: 10, pathToSlugField: "")
                         }
                     }
                 }
@@ -33,6 +34,7 @@ export async function createPages({ actions, graphql }: CreatePagesArgs) {
             context: {
                 html: node.html,
                 title: node.frontmatter.title,
+                toc: node.tableOfContents,
             },
             component: path.resolve(__dirname, '../templates/PostTemplate.tsx'),
         });

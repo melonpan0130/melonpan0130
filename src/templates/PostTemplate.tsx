@@ -7,12 +7,14 @@ type IPostTemplateProps = ITemplateProps<{
     title: string;
     date: Date;
     html: string;
+    toc: string;
 }>;
 
 const PostTemplate: React.FC<IPostTemplateProps> = React.memo(props => {
-    const { title, date, html } = props.pageContext;
+    const { title, date, html, toc } = props.pageContext;
     return (
         <Layout>
+            <div id="toc">{toc}</div>
             <h2>{title}</h2>
             <h4>{date}</h4>
             <hr />

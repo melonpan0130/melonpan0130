@@ -2331,11 +2331,13 @@ export type SitePageContext = {
   __typename?: 'SitePageContext';
   html?: Maybe<Scalars['String']>;
   title?: Maybe<Scalars['String']>;
+  toc?: Maybe<Scalars['String']>;
 };
 
 export type SitePageContextFilterInput = {
   html?: Maybe<StringQueryOperatorInput>;
   title?: Maybe<StringQueryOperatorInput>;
+  toc?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageEdge = {
@@ -2440,6 +2442,7 @@ export type SitePageFieldsEnum =
   | 'isCreatedByStatefulCreatePages'
   | 'context___html'
   | 'context___title'
+  | 'context___toc'
   | 'pluginCreator___id'
   | 'pluginCreator___parent___id'
   | 'pluginCreator___parent___parent___id'
@@ -2495,6 +2498,10 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___theme_color_in_head'
   | 'pluginCreator___pluginOptions___cacheDigest'
   | 'pluginCreator___pluginOptions___dest'
+  | 'pluginCreator___pluginOptions___className'
+  | 'pluginCreator___pluginOptions___maintainCase'
+  | 'pluginCreator___pluginOptions___removeAccents'
+  | 'pluginCreator___pluginOptions___elements'
   | 'pluginCreator___pluginOptions___pathCheck'
   | 'pluginCreator___nodeAPIs'
   | 'pluginCreator___browserAPIs'
@@ -2700,6 +2707,10 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___theme_color_in_head'
   | 'pluginOptions___cacheDigest'
   | 'pluginOptions___dest'
+  | 'pluginOptions___className'
+  | 'pluginOptions___maintainCase'
+  | 'pluginOptions___removeAccents'
+  | 'pluginOptions___elements'
   | 'pluginOptions___pathCheck'
   | 'nodeAPIs'
   | 'browserAPIs'
@@ -2833,6 +2844,10 @@ export type SitePluginPluginOptions = {
   theme_color_in_head?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
   dest?: Maybe<Scalars['String']>;
+  className?: Maybe<Scalars['String']>;
+  maintainCase?: Maybe<Scalars['Boolean']>;
+  removeAccents?: Maybe<Scalars['Boolean']>;
+  elements?: Maybe<Array<Maybe<Scalars['String']>>>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
@@ -2851,6 +2866,10 @@ export type SitePluginPluginOptionsFilterInput = {
   theme_color_in_head?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
   dest?: Maybe<StringQueryOperatorInput>;
+  className?: Maybe<StringQueryOperatorInput>;
+  maintainCase?: Maybe<BooleanQueryOperatorInput>;
+  removeAccents?: Maybe<BooleanQueryOperatorInput>;
+  elements?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 

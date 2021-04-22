@@ -14,7 +14,7 @@ const PostTemplate: React.FC<IPostTemplateProps> = React.memo(props => {
     const { title, date, html, toc } = props.pageContext;
     return (
         <Layout>
-            <div id="toc">{toc}</div>
+            <div id='toc' dangerouslySetInnerHTML={{__html: toc}}/>
             <h2>{title}</h2>
             <h4>{date}</h4>
             <hr />

@@ -2,6 +2,7 @@ import React from  'react';
 import Layout from '../components/layout';
 import { ITemplateProps } from '../interface';
 import Utterances from './Utterances';
+import "../css/post.css"
 
 type IPostTemplateProps = ITemplateProps<{
     title: string;

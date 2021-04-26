@@ -6,12 +6,10 @@
 }
 #menubar {
     max-width: 960px;
-    padding: 1.45rem 1.0875rem;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 2.45rem;
-    /* overflow: hidden;
-    border-radius: 5px; */
+    width: 100%;
+    padding: 0 1.0875rem;
+    padding-bottom: 3.45rem;
+    margin: 1.45rem 0;
 }
 
 #menubar .menu_item {

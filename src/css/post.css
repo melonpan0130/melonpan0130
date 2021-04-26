@@ -1,10 +1,14 @@
 #toc {
-    border-left: solid rgb(201, 201, 201) 5px;
-    position: absolute;
+    position: relative;
     left: 100%;
-    margin: 0 30px;
 }
 
 #toc ul {
     list-style-type: none;
+}
+
+#toc > ul {
+    position: fixed;
+    border-left: solid rgb(201, 201, 201) 5px;
+    padding: 10px 20px;
 }

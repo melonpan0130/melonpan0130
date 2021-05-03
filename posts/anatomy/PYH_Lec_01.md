@@ -128,7 +128,119 @@ category: 'anatomy'
 #### 구조
 
 * **표피*Epidermis*** 여러 층의 상피세포로 구성, 혈관이나 림프관은 분포하지 않는다.
-* **진피*Dermis*** 아교섬유*Collagen*
+* **진피*Dermis*** 아교섬유*Collagen fiber* 및 탄력섬유*Elastic fiber* 로 구성되어 있다. 털주머니, 기름샘, 땀샘, 혈관, 신경 등이 분포한다.
+* **피부밑조직*Subcutaneous tissue*** 지방조직을 많이 포함하고 있는 성긴결합조직. 육안해부학에서는 **얕은근막*Superficial fascia***라고 한다. 주로 피하지방이 얕은 근막에 분포하게 된다.
+* **깊은근막*Deep fascia*** 뼈대근육을 싸고 있는 막이다.
+
+
+
+------
+
+### 뼈대계통*Skeletal system*
+
+뼈와 연골로 이루어져 있다.
+
+#### 기능
+
+* 인체의 구조를 지지한다.
+* 내장을 보호한다.
+* 칼슘을 저장한다.
+* 혈액을 만든다.
+
+
+
+뼈대계통은 크게 2부분으로 나뉘어진다.
+
+1. **몸통뼈대*Axial skeleton* (80개)**  몸의 중심 축을 따라 구성. 머리, 척주, 가슴우리, 몸통에 있는 장기들을 담기 위한 용기의 틀이다.
+2. **팔다리뼈*Appendicular skeleton* (126개)** 팔이음뼈와 다리이음뼈를 포함하여 팔다리뼈, 근육이 붙어있어 팔다리가 운동할 수 있다.
+
+전형적인 성인의 뼈는 206개이다.
+
+
+
+------
+
+### 뼈의 구조
+
+* 모양에 따라
+  * 긴 뼈*Ling bone*, 짧은 뼈*Short bone*, 납작뼈*Flat bone*, 불규칙뼈*Irregular bone*
+* 조직학적 구성에 따른 분류
+  현미경으로 봤을 때 보이는 구성에 따라 분류
+  * **치밀뼈*Conpact bone*** 뼈 조직이 빈틈없이 치밀하게 채워진 뼈
+  * **해면뼈*Spongy bone*** 뼈 기둥이 스폰지처럼 엉성하게 얽힌 부분
+* 그 외
+  * **종자뼈*Sesamoid bone*** 다른 뼈와 관절하지 않고 물렁조직*Soft tissue*(주로 힘줄)에 묻혀있는 뼈. 대표적으로 무릎뼈가 있다.
+  * **공기뼈*Pneumatic bone*** 외부와 연결된 공간이 있는 일부 머리뼈
+
+
+
+#### 뼈 표면구조물
+
+* **관절융기*Condyle***, **능선*Crest***, **위관절융기*Epicondyle***, **선*Line***, **돌기*Trochater***, **결절*Tubercle*** 등
+  뼈에 근육이 부착되는 위치를 확보하기 위한 구조물이다.
+* **패임*notch***, **구멍*Foramen***, **오목*Fossa***, **고랑*Groove*** 등
+  주로 신경과 혈관이 지나가는 부분에서 볼 수 있다.
+
+
+
+#### 골수*Bone marrow*
+
+치밀뼈가 만드는 골수공간과 해면뼈 사이에 **골수*Bone marrow***가 차 있다. 나이가 들면서 골수는 조혈작용이 멈추며 지방세포로 대체되어 노란색을 띈다.
+
+* **적색골수*Red marrow*** 조혈작용이 활발하게 일어나는 골수
+* **황색골수*Yellow marrow*** 지방으로 대체된 골수
+
+
+
+------
+
+### 관절의 형태와 구조
+
+#### 관절의 분류
+
+관절이란, 2개 이상의 뼈가 만나 결합하고 있는 것이다.
+
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>뼈 사이 결합부분</td>
+    <td>운동성 여부</td>
+    <td>예</td>
+  </tr>
+  <tr>
+    <td colspan="2">섬유관절<i>Fibrous joint</i></td>
+    <td>섬유조직</td>
+    <td>운동성 없음</td>
+    <td>머리뼈 봉합<i>Suture</i> 인대결합, 못박이 관절(치아가 이틀에 박힌 것)</td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="">연골관절<i>Cartilaginous joint</i></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>유리연골결합<i>Synchondrosis</i></td>
+    <td>유리연골<i>Hyaline cartilage</i></td>
+    <td></td>
+    <td>아직 성장이 되지 않은 아이들에게 주로 보인다. 성인이 되면서 일반 뼈로 대체된다.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>섬유연골결합<i>Symphysis</i></td>
+    <td>섬유연골<i>Fibrocartilage</i></td>
+    <td>약간의 운동성</td>
+    <td>척추사이원반<i>Intervertebral</i></td>
+  </tr>
+  <tr>
+    <td colspan="2">윤활관절<i>Synovial joint</i></td>
+    <td>뼈 사이에 공간[관절안<i>Articular cavity</i>]이 있고, 그 사이에 윤활액<i>Synovial fluid</i>이 채워짐</td>
+    <td>자유로운 운동</td>
+    <td>가장 흔하게 볼수 있는 관절이다. 팔과 다리에 있는 대부분의 관절이 해당된다.</td>
+  </tr>
+</table>
 
 
 

@@ -202,8 +202,7 @@ category: 'anatomy'
 
 <table>
   <tr>
-    <td></td>
-    <td></td>
+    <td colspan="2"></td>
     <td>뼈 사이 결합부분</td>
     <td>운동성 여부</td>
     <td>예</td>
@@ -241,6 +240,25 @@ category: 'anatomy'
     <td>가장 흔하게 볼수 있는 관절이다. 팔과 다리에 있는 대부분의 관절이 해당된다.</td>
   </tr>
 </table>
+
+
+#### 윤활관절의 종류
+
+* **평면관절*Plane joint*** 
+  봉우리빗장관절
+* **경첩관절*Hinge joint***
+  팔꿈관절
+* **중쇠관절*Pivot joint***
+  고리중쇠관절
+* **두융기관절*Bicondylar joint***
+  무릎관절
+* **타원관절*Ellipsoid joint***
+  노손목관절
+* **안장관절*Saddle joint***
+  손목손허리관절
+* **절구관절*Spheroidal joint***
+  엉덩관절
+
 
 
 

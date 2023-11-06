@@ -1,0 +1,15 @@
+.MenubarComponent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+
+  span {
+    text-decoration-line: underline;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

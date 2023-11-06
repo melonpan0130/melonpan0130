@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 24px;
+}
+
+.AppContent {
+  margin: 0 25%;
+  flex-grow: 1;
+}
+
+.HeaderComponent,
+.FooterComponent {
+  padding: 0 25%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .App > * {
+    margin: 0;
+    padding: 0 30px;
+  }
+
+  .HeaderComponent,
+  .FooterComponent {
+    height: 150px;
+  }
+
+  .HeaderComponent {
+    font-size: 20px;
+  }
+}
+
+/* TODO move to local */
+.ContentComponent {
+  overflow-wrap: break-word;
+}
+
+.HeaderComponent {
+}
+
+.FooterComponent {
+  font-size: 16px;
+  background-color: #f8f8f8;
+  color: #cecece;
+}

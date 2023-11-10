@@ -1,0 +1,29 @@
+$border_radious: 5px;
+
+$light_fgColor: #cecece;
+$light_bgColor: #f8f8f8;
+
+button.button1 {
+  $button1_fgColor: #333333;
+  $button1_bgColor: #eeeeee;
+
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: $border_radious;
+  color: $button1_fgColor;
+  background-color: $button1_bgColor;
+
+  &:hover {
+    color: $button1_bgColor;
+    background-color: $button1_fgColor;
+  }
+
+  &.selected {
+    color: $button1_fgColor;
+    background-color: $button1_bgColor;
+    outline: solid 3px $button1_fgColor;
+    outline-offset: -3px;
+  }
+}

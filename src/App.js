@@ -1,7 +1,7 @@
 import './App.scss';
 import HeaderComponent from './component/HeaderComponent/HeaderComponent';
 import MenubarComponent from './component/MenubarComponent/MenubarComponent';
-import ContentComponent from './component/ContentComponent/ContentComponent';
+import BoardComponent from './component/BoardComponent/BoardComponent';
 import FooterComponent from './component/FooterComponent/FooterComponent';
 
 function App() {
@@ -10,7 +10,8 @@ function App() {
       <HeaderComponent />
       <div className="AppContent">
         <MenubarComponent />
-        <ContentComponent />
+        {/* <ContentComponent /> */}
+        <BoardComponent />
       </div>
       <FooterComponent />
     </div>

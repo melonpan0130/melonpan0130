@@ -1,16 +1,17 @@
-// .HeaderComponent {
-//   padding: 0 25%;
-//   height: 200px;
-//   display: flex;
-//   align-items: center;
-//   flex-shrink: 0;
-//   // font-size: 16px;
-// }
+@import '../../global.scss';
 
-// @media screen and (max-width: 768px) {
-//   .HeaderComponent {
-//     height: 150px;
-//     margin: 0;
-//     padding: 0 30px;
-//   }
-// }
+.HeaderComponent {
+  flex-direction: column;
+
+  .title {
+    margin: 50px 0;
+  }
+
+  .translateButton {
+    padding: 20px 0;
+
+    button {
+      margin-right: 5px;
+    }
+  }
+}

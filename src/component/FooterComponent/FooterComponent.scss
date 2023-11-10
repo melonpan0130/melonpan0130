@@ -1,0 +1,9 @@
+@import '../../global.scss';
+
+.FooterComponent {
+  font-size: 16px;
+  align-items: center;
+  color: $light_fgColor;
+  background-color: $light_bgColor;
+  min-height: 200px;
+}

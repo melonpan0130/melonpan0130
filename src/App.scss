@@ -1,3 +1,5 @@
+@import './global.scss';
+
 .App {
   display: flex;
   flex-direction: column;
@@ -15,35 +17,16 @@
 .HeaderComponent,
 .FooterComponent {
   padding: 0 25%;
-  height: 200px;
   display: flex;
-  align-items: center;
-  flex-shrink: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 768px) {
   .App > * {
     margin: 0;
     padding: 0 30px;
   }
 
-  .HeaderComponent,
-  .FooterComponent {
-    height: 150px;
-  }
-
   .HeaderComponent {
     font-size: 20px;
   }
-}
-
-/* TODO move to local */
-.ContentComponent {
-  overflow-wrap: break-word;
-}
-
-.FooterComponent {
-  font-size: 16px;
-  background-color: #f8f8f8;
-  color: #cecece;
 }

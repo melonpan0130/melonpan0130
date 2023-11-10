@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.BoardComponent {
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  div.posting {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: $border_radious;
+    transition: box-shadow 0.5s;
+
+    & > .title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    & > .content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+      line-height: 1.3em;
+      height: 3.9em;
+    }
+
+    &:hover {
+      box-shadow: 0 0 15px gray;
+    }
+  }
+}

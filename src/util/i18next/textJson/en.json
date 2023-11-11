@@ -2,6 +2,7 @@
   "translation": {
     "common": {
       "title": "😎The blog that I created to study"
-    }
+    },
+    "notFound": "This page cannot be found.😢"
   }
 }

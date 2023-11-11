@@ -2,6 +2,7 @@
   "translation": {
     "common": {
       "title": "😎私が勉強しようと作ったブログ"
-    }
+    },
+    "notFound": "このページは存在しません。😢"
   }
 }

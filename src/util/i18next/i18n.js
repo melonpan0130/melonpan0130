@@ -11,7 +11,7 @@ i18n
   .init({
     // for all options read: https://www.i18next.com/overview/configuration-options
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: 'ko',
     interpolation: {
       escapeValue: false,
     },

@@ -3,23 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "i18next": "^23.6.0",
     "i18next-browser-languagedetector": "^7.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.3.1",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.18.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
     "scss": "^0.2.4",
+    "style-loader": "^3.3.3",
     "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --config ./webpack.config.js --mode development ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +49,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "html-loader": "^4.2.0",
+    "react": "^16.6.3",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^16.6.3",
+    "webpack-cli": "^5.1.4"
   }
 }

@@ -1,18 +1,25 @@
 import './MenubarComponent.scss';
+import { NavLink } from 'react-router-dom';
 
 function MenubarComponent() {
   return (
     <div className="MenubarComponent">
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
-      <span>hello1</span>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
+      <NavLink>hello1</NavLink>
     </div>
   );
 }

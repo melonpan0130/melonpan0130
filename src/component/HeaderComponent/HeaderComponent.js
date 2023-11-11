@@ -1,5 +1,6 @@
 import './HeaderComponent.scss';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const languages = {
   en: { nativeName: 'English' },
@@ -20,13 +21,18 @@ function HeaderComponent() {
             className={
               'button1 ' + (i18n.resolvedLanguage === lang ? 'selected' : '')
             }
-            onClick={() => i18n.changeLanguage(lang)}
+            onClick={() => {
+              i18n.changeLanguage(lang);
+              document.documentElement.lang = lang;
+            }}
           >
             {languages[lang].nativeName}
           </button>
         ))}
       </div>
-      <h3 className="title">{t('common.title')}</h3>
+      <Link to="/" className="title">
+        {t('common.title')}
+      </Link>
     </div>
   );
 }

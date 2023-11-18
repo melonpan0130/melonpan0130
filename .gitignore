@@ -53,7 +53,7 @@ __diff_output__/
 .eslintcache
 
 # lock files
-yarn.lock
+# yarn.lock
 package-lock.json
 # ignore any lock file other than main lock file
 !/yarn.lock

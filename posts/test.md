@@ -8,4 +8,4 @@ path: '/테스트'
 
 마크다운으로 작성한 게시글 입니다.
 
-![sdfsdf](./gatsby-astronaut.png)
+![sdfsdf](./images/gatsby-astronaut.png)

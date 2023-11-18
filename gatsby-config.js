@@ -9,10 +9,35 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/posts`
-      }
+        path: `${__dirname}/posts`,
+      },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must go before gatsby-remark-images
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              // [Optional] The root of "media_folder" in your config.yml
+              // Defaults to "static"
+              staticFolderName: 'static',
+              // [Optional] Include the following fields, use dot notation for nested fields
+              // All fields are included by default
+              include: ['featured'],
+              // [Optional] Exclude the following fields, use dot notation for nested fields
+              // No fields are excluded by default
+              exclude: ['featured.skip'],
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: { maxWidth: 1024 },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
@@ -39,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-generate-typings`,
       options: {
-              dest: `./src/graphql-types.d.ts`,
+        dest: `./src/graphql-types.d.ts`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -56,4 +81,4 @@ module.exports = {
       },
     },
   ],
-}
+};

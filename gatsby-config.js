@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Woon`,
-    description: `내가 공부하려고 만든 블로그`,
+    title: `😎내가 공부하려고 만든 블로그`,
     author: `@melonpan0130`,
   },
   plugins: [
@@ -54,17 +53,16 @@ module.exports = {
         path: `${__dirname}/posts/images`,
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `melonpan0130_blog`,
+        short_name: `melonpan0130`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#070952`,
+        theme_color: `#EF4DA0`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -88,5 +86,6 @@ module.exports = {
         elements: [`h2`, 'h3', `h4`], // 링크를 추가할 Header 종류 선택
       },
     },
+    `gatsby-plugin-sass`,
   ],
 };

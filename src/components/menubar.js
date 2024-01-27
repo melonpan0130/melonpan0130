@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import '../css/menubar.css';
 
 class Dropdown extends React.Component {
@@ -19,8 +19,14 @@ class Dropdown extends React.Component {
 
   render() {
     return (
-      <div className="dropdown" onMouseOver={this.onMouseOver.bind(this)} onMouseLeave={this.onMouseLeave.bind(this)}>
-        <a className="menu_item dropdown_title">News</a>
+      <div
+        role="presentation"
+        className="dropdown"
+        onFocus={this.onMouseOver.bind(this)}
+        onMouseLeave={this.onMouseLeave.bind(this)}
+      >
+        {/* onMouseOver={this.onMouseOver.bind(this)} */}
+        <p className="menu_item dropdown_title">News</p>
         <div className="dropdown_menu" style={{ display: this.isHovering ? 'block' : 'none' }}>
           <a className="dropdown_item" href="/news/japan">
             Japan

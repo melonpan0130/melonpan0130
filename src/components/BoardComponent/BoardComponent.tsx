@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import { gql, useQuery } from '@apollo/client';
 import { Link } from 'gatsby';
 
+import React from 'react';
+
 const QUERY_SEARCH_BOARD: any = gql(`
 query QUERY_SEARCH_BOARD {
   allMarkdownRemark(
@@ -46,20 +48,22 @@ query QUERY_SEARCH_BOARD_FILTER($filter: String! = "anatomy") {
 `);
 
 const BoardComponent = ({ filter = '' }) => {
-  let result: any = null;
+  let query: any = null;
 
+  console.log('TEST_CEJ ');
+  // console.log(params);
   if (filter !== '') {
-    const { data } = useQuery(QUERY_SEARCH_BOARD_FILTER, { variables: { filter: filter } });
-    result = data;
+    query = QUERY_SEARCH_BOARD_FILTER;
   } else {
-    const { data } = useQuery(QUERY_SEARCH_BOARD);
-    result = data;
+    query = QUERY_SEARCH_BOARD;
   }
+  const { data, loading } = useQuery(query, { variables: { filter: filter } });
 
   return (
     <ul id="home_list">
-      {result !== undefined
-        ? result.allMarkdownRemark.edges.map(({ node }) => (
+      {loading
+        ? ` `
+        : data.allMarkdownRemark.edges.map(({ node }) => (
             <li key={node.id}>
               <Link to={node.frontmatter.path}>
                 <h3>{node.frontmatter.title}</h3>
@@ -67,8 +71,7 @@ const BoardComponent = ({ filter = '' }) => {
                 <p>{node.excerpt}</p>
               </Link>
             </li>
-          ))
-        : ` `}
+          ))}
     </ul>
   );
 };

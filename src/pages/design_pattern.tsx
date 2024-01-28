@@ -28,6 +28,7 @@ const getCategoryDesignPattern = graphql`
 `;
 
 const CategoryDesignPattern: React.FC = () => {
+  console.log('TEST_CEJ CategoryDesignPattern');
   const data = useStaticQuery<Query>(getCategoryDesignPattern);
   return (
     <LayoutComponent>

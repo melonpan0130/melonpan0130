@@ -13,6 +13,9 @@ type IPostTemplateProps = ITemplateProps<{
 
 const PostTemplate: React.FC<IPostTemplateProps> = React.memo(props => {
   const { title, date, html, toc } = props.pageContext;
+  console.log(props.pageContext);
+  console.log(toc);
+  console.log('TEST_CEJ');
   return (
     <LayoutComponent>
       <div id="toc" dangerouslySetInnerHTML={{ __html: toc }} />

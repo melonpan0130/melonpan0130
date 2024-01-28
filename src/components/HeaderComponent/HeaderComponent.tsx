@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import Menubar from '../menubar';
 import './HeaderComponent.scss';
 
 const HeaderComponent = ({ siteTitle }) => (
@@ -8,6 +9,7 @@ const HeaderComponent = ({ siteTitle }) => (
     <Link to="/" className="title">
       {siteTitle}
     </Link>
+    <Menubar />
   </header>
 );
 

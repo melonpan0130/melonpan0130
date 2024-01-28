@@ -1,44 +1,23 @@
-import { ApolloProvider } from '@apollo/client';
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import client from '../apolloClient';
+import { Route, Routes, useParams } from 'react-router';
 import BoardComponent from '../components/BoardComponent/BoardComponent';
-import HeaderComponent from '../components/HeaderComponent/HeaderComponent';
-import Menubar from '../components/menubar';
+import LayoutComponent from '../components/LayoutComponent/LayoutComponent';
+import './index.scss';
 
 const IndexPage: React.FC = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery2 {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
-    <ApolloProvider client={client}>
-      <div id="main">
-        <HeaderComponent siteTitle={data.site.siteMetadata.title} />
-        <Menubar />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
-          <BoardComponent />
-        </div>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </ApolloProvider>
+    <LayoutComponent>
+      <Routes>
+        <Route path="/" element={<BoardComponent />} />
+        <Route path="/:topicId" element={<BoardRedirect />} />
+        {/* <Route path="/:topicId/:postId" element={<BoardComponent />} /> */}
+      </Routes>
+    </LayoutComponent>
   );
+};
+const BoardRedirect = () => {
+  const { topicId } = useParams();
+  return <BoardComponent filter={`${topicId}`} />;
 };
 
 export default IndexPage;

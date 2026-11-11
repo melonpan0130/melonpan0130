@@ -30,7 +30,6 @@ const naviBarMap = getNaviBarMap()
 .navigationItem,
 .droppedItem {
   display: inline;
-  margin: 0.5em;
 }
 
 .dropdown {
@@ -42,7 +41,7 @@ const naviBarMap = getNaviBarMap()
   display: none;
   background-color: hsla(160, 100%, 37%, 0.2);
   position: absolute;
-  left: 5px;
+  left: 0;
   padding: 10px;
 }
 

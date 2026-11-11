@@ -95,11 +95,8 @@ body {
 }
 
 #NavigationComponent a {
-  margin: 5px;
-}
-
-#NavigationComponent a:first-child {
-  margin-left: 0;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 /* Footer Component Styles */

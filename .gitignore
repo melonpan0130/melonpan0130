@@ -1,0 +1,42 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Misc
+.DS_Store
+Thumbs.db
+Desktop.ini
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Deployment
+.netlify
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor / IDE
+.vscode/*
+!.vscode/extensions.json
+.cursor

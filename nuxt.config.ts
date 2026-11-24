@@ -34,7 +34,14 @@ export default defineNuxtConfig({
     head: {
       meta: [
         { name: 'google-site-verification', content: 'L87dwmgPVDwikx88bqVUQK9s3D5fr26VaotCZ4nDqVE' }
-      ]
+      ],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon.png',
+        },
+      ],
     }
   },
   modules: [

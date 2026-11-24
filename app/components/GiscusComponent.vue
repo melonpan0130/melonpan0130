@@ -4,8 +4,8 @@ onMounted(() => {
   giscus.src = 'https://giscus.app/client.js'
   giscus.async = true
   giscus.setAttribute('data-repo', 'melonpan0130/melonpan0130')
-  giscus.setAttribute('data-repo-id', 'R_kgDOLXW8iQ')
-  giscus.setAttribute('data-category-id', 'DIC_kwDOLXW8ic4CdpHp')
+  giscus.setAttribute('data-repo-id', 'R_kgDOVqXtgg')
+  giscus.setAttribute('data-category-id', 'DIC_kwDOVqXtgs4DL1ol')
   giscus.setAttribute('data-mapping', 'pathname')
   giscus.setAttribute('data-strict', '0')
   giscus.setAttribute('data-reactions-enabled', '1')
